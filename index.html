@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Utility Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#converter">Unit Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="calculator">
+        <h2>Calculator</h2>
+        <input type="text" id="calcInput" placeholder="Enter expression">
+        <button onclick="calculate()">Calculate</button>
+        <div id="calcResult"></div>
+    </section>
+
+    <section id="converter">
+        <h2>Unit Converter</h2>
+        <input type="number" id="unitInput" placeholder="Value">
+        <select id="unitSelect">
+            <option value="m-to-km">Meters to Kilometers</option>
+            <option value="km-to-m">Kilometers to Meters</option>
+        </select>
+        <button onclick="convertUnit()">Convert</button>
+        <div id="conversionResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
